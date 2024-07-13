@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Girlfriend?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+        }
+        h1 {
+            color: #ff4081;
+        }
+        p {
+            font-size: 18px;
+        }
+        button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #e91e63;
+        }
+        .message {
+            font-size: 24px;
+            color: green;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Girlfriend?</h1>
+        <p>Dear Vaishnavi,</p>
+        <p>You are incredibly special to me and I can't imagine my life without you. Will you make me the happiest person alive by being my girlfriend?</p>
+        <button onclick="showMessage('Yes')">Yes</button>
+        <button onclick="showMessage('No')">No</button>
+        <div id="message" class="message"></div>
+    </div>
+
+    <script>
+        function showMessage(response) {
+            const messageDiv = document.getElementById('message');
+            if (response === 'Yes') {
+                messageDiv.textContent = 'You said Yes! I am the happiest person alive!';
+            } else {
+                messageDiv.textContent = 'No matter what, you will always be special to me.';
+            }
+        }
+    </script>
+</body>
+</html>
